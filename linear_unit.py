@@ -43,7 +43,7 @@ def plot(linear_unit):
     input_vecs, labels = get_training_dataset()
     fig = plt.figure()
     ax = fig.add_subplot(111)
-    ax.scatter(map(lambda x: x[0], input_vecs), labels)
+    plt.scatter(map(lambda x: x[0], input_vecs), labels)
     weights = linear_unit.weights
     bias = linear_unit.bias
     x = range(0,12,1)
